@@ -52,29 +52,6 @@ The system supports **JWT Authentication**, **Role-Based Access**, **Dynamic Pri
 
 ---
 
-# 📂 Project Structure
-
-project-root/
-│
-├── backend/
-│ ├── controllers/
-│ ├── routes/
-│ ├── models/
-│ ├── middleware/
-│ ├── seed/
-│ ├── server.js
-│ └── package.json
-│
-└── frontend/
-├── src/
-├── index.html
-└── package.json
-
-yaml
-Copy code
-
----
-
 # 🔐 Authentication System
 
 ### **Login**
@@ -84,14 +61,11 @@ POST /api/auth/login
 "password": "password"
 }
 
-markdown
-Copy code
+
 
 ### **Register**
 POST /api/auth/register
 
-yaml
-Copy code
 
 ### Token Flow
 - JWT returned on login  
@@ -120,8 +94,7 @@ GET /api/price/preview
 &addCoach=true
 &coachId=abc
 
-makefile
-Copy code
+
 
 Returns:
 {
@@ -133,8 +106,6 @@ Returns:
 ]
 }
 
-pgsql
-Copy code
 
 ---
 
@@ -182,8 +153,7 @@ Copy code
 git clone <repository-url>
 cd project-root
 
-yaml
-Copy code
+
 
 ---
 
@@ -192,8 +162,7 @@ cd backend
 npm install
 cp .env.example .env
 
-bash
-Copy code
+
 
 Update `.env`:
 MONGO_URI=your_atlas_connection_string
@@ -201,20 +170,17 @@ JWT_SECRET=some_secure_random_string
 PORT=4000
 FRONTEND_ORIGIN=http://localhost:5173
 
-shell
-Copy code
+
 
 ### Seed database:
 npm run seed
 
-shell
-Copy code
+
 
 ### Run backend:
 npm run dev
 
-yaml
-Copy code
+
 
 Server will run at:  
 ➡ http://localhost:4000
@@ -226,20 +192,17 @@ cd frontend
 npm install
 cp .env.example .env
 
-bash
-Copy code
+
 
 Update `.env`:
 VITE_API_BASE=http://localhost:4000/api
 
-shell
-Copy code
+
 
 ### Run frontend:
 npm run dev
 
-markdown
-Copy code
+
 
 Frontend runs at:  
 ➡ http://localhost:5173
@@ -263,8 +226,6 @@ Frontend runs at:
 - Environment variable:
 VITE_API_BASE=https://badminton-court-booking.onrender.com/api
 
-yaml
-Copy code
 
 ---
 
